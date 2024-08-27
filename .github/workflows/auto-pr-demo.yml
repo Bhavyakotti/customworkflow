@@ -14,8 +14,10 @@ jobs:
             uses: actions/checkout@main
 
           - name: extract git commit data
-            uses: Bhavyakotti/customworkflow@main
+            uses: echo ${{ github.repository.name }}
 
+          - name: Update author information
+            run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME}} 
 
           - name: Raise PR
             uses: peter-evans/create-pull-request@main
