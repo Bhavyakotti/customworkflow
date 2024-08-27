@@ -14,7 +14,7 @@ jobs:
             uses: actions/checkout@main
 
           - name: extract git commit data
-            uses: echo ${{ github.repository.name }}
+            run: echo ${{ github.repository.name }}
 
           - name: Update author information
             run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME}} 
