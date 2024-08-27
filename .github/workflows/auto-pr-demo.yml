@@ -15,7 +15,7 @@ jobs:
             uses: actions/checkout@main
 
           - name: extract git commit data
-            run: echo ${{ github.repository.name }}
+            uses: Bhavyakotti/customworkflow@main
 
           - name: Update author information
             run: echo ${{ env.NAME_OF_AUTHOR}} 
