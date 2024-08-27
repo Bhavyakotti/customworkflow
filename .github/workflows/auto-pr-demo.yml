@@ -21,7 +21,7 @@ jobs:
             run: echo ${{ env.NAME_OF_AUTHOR}} 
 
           - name: Raise PR
-            uses: peter-evans/create-pull-request@main
+            uses: Bhavyakotti/customworkflow/create-pull-request@main
             with: 
                branch: "auto-pr-branch"
                base: main
